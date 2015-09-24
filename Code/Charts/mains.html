@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Lang Rank</title>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <style type="text/css">
+      #icon{
+       text-align: center;
+       position: relative;
+       right: 140px;
+      }
+</style>
+
+<!-- Google Charts Script -->
+
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+<script type="text/javascript">
+google.load('visualization', '1', {packages: ['corechart', 'line']});
+google.setOnLoadCallback(chartLoaded);
+//google.load('visualization', '1', {packages: ['corechart', 'line']});
+
+/* Read a file  using xmlhttprequest 
+
+If the HTML file with your javascript app has been saved to disk, 
+this is an easy way to read in a data file.  Writing out is 
+more complicated and requires either an ActiveX object (IE) 
+or XPCOM (Mozilla).
+
+fname - relative path to the file
+callback - function to call with file text
+*/
+
+function chartLoaded()
+{
+  //alert ("load  complete");
+ //readFileHttp('csv/final_student.csv')
+
+}
+function readFileHttp(fname,chartdiv) {
+   xmlhttp = getXmlHttp();
+   xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState==4) { 
+        lines = xmlhttp.responseText;
+          callback(lines,chartdiv); 
+      }
+   }
+   xmlhttp.open("GET", fname, true);
+   xmlhttp.send(null);
+}
+
+function callback(csv,chartdiv)
+{
+
+//str =   '2008 actionscript  0.7071704\n2008 asp 0.28134948\n2008  assembly  0.23236854'
+  // data = Papa.parse(csv);
+  lines = csv.split(",");
+
+  //alert (lines)
+  drawBackgroundColor(lines,chartdiv);
+}
+/*
+Return a cross-browser xmlhttp request object
+*/
+function getXmlHttp() {
+   if (window.XMLHttpRequest) {
+      xmlhttp=new XMLHttpRequest();
+   } else if (window.ActiveXObject) {
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+   }
+   if (xmlhttp == null) {
+      alert("Your browser does not support XMLHTTP.");
+   }
+   return xmlhttp;
+}
+
+function showChart()
+{
+  
+  
+  
+  
+}
+  
+
+
+function drawBackgroundColor(lines,chartdiv) {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'X');
+
+      
+    lines = lines[0].split("\n");
+    //alert(lines)
+       for (i =0; i < 24;i++)
+
+
+      {
+          //var column = lines[i];
+          //alert(column);
+          columnss = lines[i].toString().split(";");
+          //alert(columnss[0]);
+          data.addColumn('number', columnss[1]);
+      }
+     
+      rowString = ""
+      rowString2009 = ""
+      rowString2010 = ""
+      rowString2011 = ""
+      rowString2012 = ""
+      rowString2013 = ""
+      rowString2014 = ""
+
+      currentyear = "2008";
+      start = 1;
+      i = 1;
+      for (i =0; i <  144 ;i++)
+
+
+      {
+          
+          var columns = lines[i].split(";");
+          //alert(columns[6].toString().substring(0,1));
+          
+          //alert(columns[1]);
+          
+          if ( i < 24)  
+            { 
+              //alert(lines[i]);  
+              
+              if (columns[2].toString().substring(0,1)  == ".")
+                columns[2] = "0" + columns[2].toString();
+          
+            if (start == 1)
+            {
+            rowString  = "2009" + "," + columns[2].toString().trim() ;
+            start = 0;
+          }
+            else
+            {
+             start = 0;
+            rowString  = rowString +  "," + columns[2].toString() ;
+            }
+            
+
+          }
+          if ( i > 23 && i < 48)
+            {
+              //alert (rowString2009);
+              if (columns[2].toString().substring(0,1)  == ".")
+                columns[2] = "0" + columns[1].toString();
+          
+            if ( i == 24)
+            {
+            rowString2009  = "2010" + "," + columns[2].toString().trim() ;
+            start = 0;
+          }
+            else
+            {
+             start = 0;
+            rowString2009  = rowString2009 +  "," + columns[2].toString() ;
+            }
+            
+          }
+          if ( i > 47 && i < 72)
+            {
+              
+              if (columns[2].toString().substring(0,1)  == ".")
+                columns[2] = "0" + columns[1].toString();
+          
+            if ( i == 48)
+            {
+            rowString2011  = "2011" + "," + columns[2].toString().trim() ;
+            start = 0;
+          }
+            else
+            {
+             start = 0;
+            rowString2011  = rowString2011 +  "," + columns[2].toString() ;
+            }
+            
+          }
+
+          if ( i > 71 && i < 96)
+            {
+              
+              if (columns[2].toString().substring(0,1)  == ".")
+                columns[2] = "0" + columns[1].toString();
+          
+            if ( i == 72)
+            {
+            rowString2012  = "2012" + "," + columns[2].toString().trim() ;
+            start = 0;
+          }
+            else
+            {
+             start = 0;
+            rowString2012  = rowString2012 +  "," + columns[2].toString() ;
+            }
+            
+          }
+
+
+
+          if ( i > 95 && i < 120)
+            {
+              
+              //alert(columns + "- " + i);
+              if (columns[2].toString().substring(0,1)  == ".")
+                columns[2] = "0" + columns[1].toString();
+          
+            if ( i == 96)
+            {
+            rowString2013  = "2013" + "," + columns[2].toString().trim() ;
+            start = 0;
+          }
+            else
+            {
+             start = 0;
+
+            rowString2013  = rowString2013 +  "," + columns[2].toString() ;
+            //alert(rowString2013 + " - " + columns[1].toString());
+            }
+            
+          }
+
+          if ( i > 119 && i < 144)
+            {
+              
+              if (columns[2].toString().substring(0,1)  == ".")
+                columns[2] = "0" + columns[1].toString();
+          
+            if ( i == 120)
+            {
+            rowString2014  = "2014" + "," + columns[2].toString().trim() ;
+            start = 0;
+          }
+            else
+            {
+             start = 0;
+
+            rowString2014  = rowString2014 +  "," + columns[2].toString() ;
+            }
+            
+          }
+          
+      }
+
+      
+      
+     // str.replace(/blue/g, "red");
+      rowString = rowString.replace(/"/g,"");
+      rowString2009 = rowString2009.replace(/"/g,"");
+      rowString2011 = rowString2011.replace(/"/g,"");
+      rowString2012 = rowString2012.replace(/"/g,"");
+      rowString2013 = rowString2013.replace(/"/g,"");
+      rowString2014 = rowString2014.replace(/"/g,"");
+
+    
+      var chartLines = rowString.split(",");
+
+      for (j = 0; j < chartLines.lenght; j++)
+          chartLines[j] = parseFloat(chartLines[j]);
+
+    var result= chartLines.map(Number);
+    result [0] = result [0].toString();
+    
+      data.addRow(result);
+
+      chartLines = rowString2009.split(",");
+
+      for (j = 0; j < chartLines.lenght; j++)
+          chartLines[j] = parseFloat(chartLines[j]);
+
+     result= chartLines.map(Number);
+    result [0] = result [0].toString();
+   
+      data.addRow(result);
+
+
+
+      chartLines = rowString2011.split(",");
+
+      for (j = 0; j < chartLines.lenght; j++)
+          chartLines[j] = parseFloat(chartLines[j]);
+
+     result= chartLines.map(Number);
+    result [0] = result [0].toString();
+    
+      data.addRow(result);
+
+      
+      chartLines = rowString2012.split(",");
+
+      for (j = 0; j < chartLines.lenght; j++)
+          chartLines[j] = parseFloat(chartLines[j]);
+
+     result= chartLines.map(Number);
+    result [0] = result [0].toString();
+    
+      data.addRow(result);
+
+
+       chartLines = rowString2013.split(",");
+
+      for (j = 0; j < chartLines.lenght; j++)
+          chartLines[j] = parseFloat(chartLines[j]);
+
+     result= chartLines.map(Number);
+    result [0] = result [0].toString();
+    
+      data.addRow(result);
+
+
+
+       chartLines = rowString2014.split(",");
+
+      for (j = 0; j < chartLines.lenght; j++)
+          chartLines[j] = parseFloat(chartLines[j]);
+
+     result= chartLines.map(Number);
+    result [0] = result [0].toString();
+
+      data.addRow(result);
+
+      var options = {
+        hAxis: {
+          title: 'Time'
+        },
+        vAxis: {
+          title: 'Popularity'
+        },
+        animation:{
+        duration: 1000,
+        easing: 'inAndOut',
+        startup: true
+      },
+        backgroundColor: 'white',
+        curveType: 'none',
+          pointSize: 10,
+
+      };
+      var chart;
+     
+          chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+     
+      chart.draw(data, options);
+    }
+
+</script>
+<script type="text/javascript">
+
+function ShowMetrics()
+{
+  function swap(one, two) {
+    document.getElementById(one).style.display = 'block';
+    document.getElementById(two).style.display = 'none';
+}
+
+}
+</script>
+
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-default">
+      <div id="icon">
+        <span class="fa-stack icon-resize-small fa-2x">
+         <i class="fa fa-square fa-stack-2x">LangRank</i>
+         <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+       </span>
+     </div>
+    </nav>
+
+    <div class="text-center">
+    <button type="button" onclick="readFileHttp('csv/final_student.csv',1)" class="btn btn-primary btn-lg active"><i class="fa fa-graduation-cap">Student</i></button>
+    <button type="button" onclick="readFileHttp('csv/final_company.csv',2)" class="btn btn-default btn-lg active"><i class="fa fa-building">Business</i></button>
+    <button type="button" onclick="readFileHttp('csv/final_startup.csv',3)"  class="btn btn-default btn-lg active"><i class="fa fa-cloud">Start-up</i></button>
+    <button type="button" onclick="readFileHttp('csv/final_training.csv',4)"  class="btn btn-default btn-lg active"><i class="fa fa-youtube-play">Intsructor</i></button>
+    
+
+</div>
+<div class="row">
+    <div class="col-md-3" style="padding-left: 1cm; padding-top: 1cm;">
+        <div class="panel panel-primary">
+          <div class="panel-heading" style="max-height: 10;">
+            <h4 class="text-center">Student</h1>
+          </div>
+          <div class="panel-body">
+            <p> ***Student Metric description*** TIt cannot tell the future of course, but think about charts as a map or measure of trader psychology. Because humans can often do the same things in a pattern or respond the same way this can show up on charts. So patterns will repeat. 
+            </p>
+          </div>
+
+        </div>
+
+    </div>
+      <div class="col-md-8" style="padding-left: 1cm; padding-top: 1cm;">
+         <div class="text-center" id="chart_div" style="height: 800px;width :900px">
+           
+          </div>
+        </div>
+</div>
+    
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

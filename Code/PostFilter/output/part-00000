@@ -1,0 +1,140 @@
+1 |-| <.net> |-| 8 |-| 59368 |-| 208 |-| Difference between Math.Floor() and Math.Truncate() |-| 2008	
+	
+1 |-| <.net><asp.net><svn><versioning> |-| 7 |-| 6488 |-| 61 |-| How do I sync the SVN revision number with my ASP.NET web site? |-| 2008	
+	
+1 |-| <.net><database><sqlite> |-| 3 |-| 1364 |-| 11 |-| Create a SQLite database based on an XSD Data Set |-| 2008	
+	
+1 |-| <.net><database><xsd> |-| 1 |-| 606 |-| 9 |-| XSD DataSets and ignoring foreign keys |-| 2008	
+	
+1 |-| <.net><performance><memory-leaks><com-interop> |-| 15 |-| 8686 |-| 110 |-| Anatomy of a "Memory Leak" |-| 2008	
+	
+1 |-| <.net><web-services> |-| 1 |-| 289 |-| 8 |-| Homegrown consumption of web services |-| 2008	
+	
+1 |-| <actionscript-3><flex><bytearray> |-| 8 |-| 6254 |-| 29 |-| Unloading a ByteArray in Actionscript 3 |-| 2008	
+	
+1 |-| <algorithm><language-agnostic><colors><color-space> |-| 9 |-| 8898 |-| 39 |-| Function for creating color wheels |-| 2008	
+	
+1 |-| <annotations><youtube><reverse-engineering> |-| 3 |-| 5679 |-| 21 |-| Annotating YouTube videos programmatically |-| 2008	
+	
+1 |-| <c#><.net><asp.net><internationalization><globalization> |-| 4 |-| 2019 |-| 29 |-| Floating Point Number parsing: Is there a Catch All algorithm? |-| 2008	
+	
+1 |-| <c#><.net><compression><decompression> |-| 8 |-| 1580 |-| 14 |-| Compressing / Decompressing Folders & Files |-| 2008	
+	
+1 |-| <c#><.net><datetime> |-| 48 |-| 223405 |-| 862 |-| How do I calculate someone's age in C#? |-| 2008	
+	
+1 |-| <c#><.net><scripting><compiler-construction> |-| 9 |-| 9234 |-| 36 |-| Adding scripting functionality to .NET applications |-| 2008	
+	
+1 |-| <c#><.net><vb.net><timer> |-| 2 |-| 3233 |-| 35 |-| Reliable timer in a console application |-| 2008	
+	
+1 |-| <c#><datediff> |-| 31 |-| 89203 |-| 817 |-| How do I calculate relative time? |-| 2008	
+	
+1 |-| <c#><html><web-services><printing> |-| 6 |-| 9615 |-| 38 |-| How do I print an HTML document from a web service? |-| 2008	
+	
+1 |-| <c#><linq><.net-3.5> |-| 5 |-| 17138 |-| 37 |-| How do I get a distinct, ordered list of names from a DataTable using LINQ? |-| 2008	
+	
+1 |-| <c#><linq><web-services><.net-3.5> |-| 5 |-| 56591 |-| 42 |-| Filling a DataSet or DataTable from a LINQ query result set |-| 2008	
+	
+1 |-| <c#><sorting><dictionary> |-| 17 |-| 279737 |-| 402 |-| How do you sort a dictionary by value? |-| 2008	
+	
+1 |-| <c#><sql><vb.net><ascii><hex> |-| 2 |-| 3948 |-| 20 |-| Decoding T-SQL CAST in C#/VB.NET |-| 2008	
+	
+1 |-| <c#><winforms><data-binding> |-| 3 |-| 15238 |-| 22 |-| WinForms ComboBox data binding gotcha |-| 2008	
+	
+1 |-| <c#><winforms><type-conversion><opacity> |-| 13 |-| 21888 |-| 322 |-| When setting a form's opacity should I use a decimal or double? |-| 2008	
+	
+1 |-| <c++><berkeley-db> |-| 5 |-| 1709 |-| 13 |-| BerkeleyDB Concurrency |-| 2008	
+	
+1 |-| <c++><c><linux><gtk><x11> |-| 3 |-| 5363 |-| 13 |-| GTK implementation of MessageBox |-| 2008	
+	
+1 |-| <c++><c><sockets><mainframe><zos> |-| 10 |-| 5397 |-| 55 |-| How to use the C socket API in C++ on z/OS |-| 2008	
+	
+1 |-| <c++><oop><class><nested-class> |-| 10 |-| 3305 |-| 18 |-| Should I use nested classes in this case? |-| 2008	
+	
+1 |-| <com><vb6> |-| 1 |-| 1825 |-| 16 |-| Unload a COM control when working in VB6 IDE |-| 2008	
+	
+1 |-| <eclipse><svn><aptana><subclipse> |-| 4 |-| 10389 |-| 17 |-| How can you get Subclipse in Aptana to work with the newest release of Subversion? |-| 2008	
+	
+1 |-| <email><email-spam> |-| 18 |-| 61936 |-| 306 |-| How do you make sure email you send programmatically is not automatically marked as spam? |-| 2008	
+	
+1 |-| <flex><actionscript-3><air> |-| 3 |-| 3991 |-| 17 |-| SQLStatement.execute() - multiple queries in one statement |-| 2008	
+	
+1 |-| <html><browser><timezone><timezoneoffset> |-| 23 |-| 89637 |-| 319 |-| Determining a web user's time zone |-| 2008	
+	
+1 |-| <html><css><css3><internet-explorer-7> |-| 5 |-| 10912 |-| 140 |-| Why doesn't the percentage width child in absolutely positioned parent work? |-| 2008	
+	
+1 |-| <html><form-submit><html-form><submit-button> |-| 16 |-| 120117 |-| 131 |-| Multiple submit buttons in an HTML form |-| 2008	
+	
+1 |-| <internet-explorer><windows-mobile><pocketpc> |-| 3 |-| 722 |-| 10 |-| Programmatically Launch IE Mobile Favorites screen |-| 2008	
+	
+1 |-| <iphone><objective-c> |-| 9 |-| 66013 |-| 67 |-| iPhone app in landscape mode, 2008 systems |-| 2008	
+	
+1 |-| <java><generics><warnings><casting><type-safety> |-| 1 |-| 6827 |-| 28 |-| What is the meaning of the type safety warning in certain Java generics casts? |-| 2008	
+	
+1 |-| <java><php><oop><theory> |-| 19 |-| 6357 |-| 33 |-| How would you access Object properties from within an object method? |-| 2008	
+	
+1 |-| <java><xml><csv><data-conversion> |-| 17 |-| 44161 |-| 48 |-| Java lib or app to convert CSV to XML file? |-| 2008	
+	
+1 |-| <language-agnostic><types> |-| 6 |-| 7606 |-| 27 |-| When to use unsigned values over signed ones? |-| 2008	
+	
+1 |-| <linq><.net-3.5> |-| 4 |-| 3304 |-| 39 |-| Paging a collection with LINQ |-| 2008	
+	
+1 |-| <linux><winapi><visual-c++><unix><timer> |-| 10 |-| 28673 |-| 53 |-| Is gettimeofday() guaranteed to be of microsecond resolution? |-| 2008	
+	
+1 |-| <mysql><database><binary-data><data-storage> |-| 10 |-| 25923 |-| 68 |-| Binary Data in MySQL |-| 2008	
+	
+1 |-| <mysql><database><triggers> |-| 4 |-| 24855 |-| 55 |-| Throw an error in a MySQL trigger |-| 2008	
+	
+1 |-| <mysql><sql-server><csv><sql-server-2005><bcp> |-| 5 |-| 82101 |-| 51 |-| How to export data from SQL Server 2005 to MySQL |-| 2008	
+	
+1 |-| <mysql><sql-server><sql-server-2005> |-| 4 |-| 21977 |-| 35 |-| SQL Server 2005 implementation of MySQL REPLACE INTO? |-| 2008	
+	
+1 |-| <office-2007><file-type> |-| 1 |-| 1947 |-| 15 |-| Office 2007 File Type, Mime Types and Identifying Characters |-| 2008	
+	
+1 |-| <php><apache><download><analytics> |-| 7 |-| 10446 |-| 24 |-| How do I track file downloads |-| 2008	
+	
+1 |-| <php><apache><virtualhost> |-| 10 |-| 53200 |-| 54 |-| error_log per Virtual Host? |-| 2008	
+	
+1 |-| <php><arrays><cloud><tag-cloud> |-| 10 |-| 2945 |-| 31 |-| What's the best way to generate a tag cloud from an array using h1 through h6 for sizing? |-| 2008	
+	
+1 |-| <php><plugins><architecture><hook> |-| 8 |-| 18665 |-| 155 |-| Best way to allow plugins for a PHP application |-| 2008	
+	
+1 |-| <php><sql><database><flat-file> |-| 15 |-| 19328 |-| 56 |-| Flat File Databases |-| 2008	
+	
+1 |-| <python><osx><fonts><photoshop> |-| 4 |-| 1602 |-| 8 |-| How can I find the full path to a font from its display name on a Mac? |-| 2008	
+	
+1 |-| <python><windows><image><pdf> |-| 5 |-| 7583 |-| 17 |-| Get a preview JPEG of a PDF on Windows? |-| 2008	
+	
+1 |-| <python><xml> |-| 17 |-| 5179 |-| 40 |-| XML Processing in Python |-| 2008	
+	
+1 |-| <ruby-on-rails><ruby><crash> |-| 5 |-| 1309 |-| 10 |-| Frequent SystemExit in Ruby when making HTTP calls |-| 2008	
+	
+1 |-| <ruby-on-rails><ruby><http> |-| 8 |-| 8278 |-| 28 |-| Implementation of "Remember me" in a Rails application |-| 2008	
+	
+1 |-| <ruby><rdoc> |-| 2 |-| 925 |-| 16 |-| How do I add existing comments to RDoc in Ruby? |-| 2008	
+	
+1 |-| <search><lucene> |-| 3 |-| 2993 |-| 21 |-| Lucene Score results |-| 2008	
+	
+1 |-| <security><php> |-| 13 |-| 53232 |-| 126 |-| PHP Session Security |-| 2008	
+	
+1 |-| <sql-server><database><svn><version-control> |-| 26 |-| 47930 |-| 198 |-| How do I version my SQL Server database |-| 2008	
+	
+1 |-| <sql-server><datatable><rdbms> |-| 8 |-| 30218 |-| 72 |-| Check for changes to an SQL Server table? |-| 2008	
+	
+1 |-| <sql-server><migration> |-| 5 |-| 2555 |-| 14 |-| Upgrading SQL Server 6.5 |-| 2008	
+	
+1 |-| <sql><asp.net><sitemap> |-| 1 |-| 974 |-| 15 |-| ASP.NET Site Maps |-| 2008	
+	
+1 |-| <sql><database><version-control> |-| 26 |-| 16171 |-| 73 |-| Is there a version control system for database structure changes? |-| 2008	
+	
+1 |-| <string><language-agnostic><cross-platform> |-| 32 |-| 124204 |-| 90 |-| Generate list of all possible permutations of a string |-| 2008	
+	
+1 |-| <svn><collaboration> |-| 5 |-| 2254 |-| 14 |-| Best Practice: Collaborative Environment, Bin Directory, SVN |-| 2008	
+	
+1 |-| <svn><tortoisesvn><branch><branching-and-merging> |-| 3 |-| 50994 |-| 133 |-| Good branching and merging tutorials for TortoiseSVN? |-| 2008	
+	
+1 |-| <windows><embed><media> |-| 9 |-| 124857 |-| 30 |-| Embedding Windows Media Player for all browsers |-| 2008	
+	
+1 |-| <windows><mailto> |-| 3 |-| 15263 |-| 15 |-| Register Windows program with the mailto protocol programmatically |-| 2008	
+	
+1 |-| <windows><svn><64bit> |-| 9 |-| 13841 |-| 28 |-| Best Subversion clients for Windows Vista (64bit) |-| 2008	
+	
